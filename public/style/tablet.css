@@ -1,0 +1,6 @@
+@media screen and (min-width: 606px) and (max-width: 1023px) {
+  #container .infoBlock {
+    width: 80%;
+    left: 10%;
+  }
+}

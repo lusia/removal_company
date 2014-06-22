@@ -1,28 +1,54 @@
+@import "compass";
+@import "compass/reset";
+
+
+$width : 100%;
+$font : Arial, Tahoma, sans-serif;
+
+
 body {
-  background-image: url("../img/bg2.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
   margin: 0;
+  font-family: $font;
 }
 
 #container {
-  height: 700px;
+  width: $width;
+  position: relative;
+  background-image: url("../img/bg2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  h1 {
+    margin: 0;
+  }
+  .header {
+    bottom: 0;
+    left: 0;
+    width: $width;
+    min-height: 60px;
+    background-color: white;
+    position: absolute;
+  }
+  .fixNav {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+  }
+  .infoBlock {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 40%;
+    height: 135px;
+    opacity: 0.5;
+    top: 30%;
+    left: 35%;
+  }
+
 }
 
-.header {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  min-height: 60px;
-  background-color: white;
-  position: absolute;
-}
 .content {
   height: 500px;
   background-color: white;
 }
-.fixNav {
-  position: fixed;
-  top: 0;
-  bottom: auto;
-}
+
