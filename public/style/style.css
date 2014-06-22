@@ -1,0 +1,30 @@
+body {
+  background-image: url("../img/bg2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+#container {
+  height: 700px;
+}
+
+.header {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  background-color: white;
+  position: absolute;
+}
+
+.content {
+  height: 500px;
+  background-color: white;
+}
+
+.fixNav {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "removal_company",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.4.3",
+    "hbs": "~2.7.0",
+    "handlebars": "~2.0.0-alpha.4",
+    "router": "~0.6.2",
+    "compass": "~0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
