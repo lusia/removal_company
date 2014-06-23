@@ -3,4 +3,21 @@
     width: 80%;
     left: 10%;
   }
+  #container .header ul {
+    margin-left: 8%;
+  }
+  #container .header ul li {
+    font-size: 1.5em;
+  }
+
+  .content {
+    width: 90%;
+  }
+  .content .infoBlock h2 {
+    font-size: 2.5em;
+  }
+  .content .infoBlock p {
+    font-size: 2em;
+    line-height: 100%;
+  }
 }

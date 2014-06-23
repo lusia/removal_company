@@ -1,10 +1,14 @@
 @import "compass";
 @import "compass/reset";
 @import "compass/typography/lists";
+@import "compass/typography/links";
+@import "compass/typography/links/link-colors";
 
 $width: 100%;
 $height: 100%;
 $font: Arial, Tahoma, sans-serif;
+$fontSize: 12px;
+$mainColor: #E54A1A;
 
 body {
   margin: 0;
@@ -15,41 +19,12 @@ body {
   width: $width;
   height: 660px;
   position: relative;
+  margin-bottom: 100px;
   background-image: url("../img/bg2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   h1 {
     margin: 0;
-  }
-  .header {
-    bottom: 0;
-    left: 0;
-    width: $width;
-    min-height: 110px;
-    background-color: white;
-    position: absolute;
-    ul {
-      @include horizontal-list;
-      margin-left: 20%;
-      li {
-        width: 207px;
-        display: block;
-        color: grey;
-        text-align: center;
-        border-right: 1px solid black;
-        font-size: 28px;
-      }
-      li:last-child {
-        border-right: none;
-        margin-left: 20px;
-      }
-
-    }
-  }
-  .fixNav {
-    position: fixed;
-    top: 0;
-    bottom: auto;
   }
   .infoBlock {
     position: absolute;
@@ -67,15 +42,78 @@ body {
       display: inline-block;
       margin: 55px 0 0 20px;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 2em;
       word-wrap: break-word;
     }
   }
+  .header {
+    bottom: 0;
+    left: 0;
+    width: $width;
+    min-height: 110px;
+    background-color: white;
+    position: absolute;
+    #logo {
+      display: inline-block;
+      color: green;
+      font-size: 2em;
+      margin: 20px 0 0 30px;
+    }
+    ul {
+      @include horizontal-list;
+      margin-left: 20%;
+      li {
+        width: 207px;
+        display: block;
+        color: grey;
+        text-align: center;
+        border-right: 1px solid black;
+        font-size: 2em;
+        a {
+          color: inherit;
+          text-decoration: inherit;
+          cursor: inherit;
+          &:active, &:focus {
+            outline: none;
+          }
+          &:hover {
+            color: $mainColor;
+          }
+        }
+      }
+      li:last-child {
+        border-right: none;
+        margin-left: 20px;
+      }
 
+    }
+  }
+  .fixNav {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+  }
 }
 
 .content {
   height: 1000px;
+  width: 70%;
   background-color: white;
+  margin: auto;
+  .infoBlock {
+    margin-bottom: 75px;
+    img {
+      vertical-align: text-top;
+      margin: 0 20px 20px 0;
+    }
+    h2 {
+      display: inline;
+      font-size: 2em;
+      color: $mainColor;
+    }
+    p {
+      text-align: justify;
+      line-height: 200%;
+    }
+  }
 }
-

@@ -3,4 +3,12 @@
     width: 80%;
     left: 10%;
   }
+
+  .content .infoBlock h2 {
+    color: green;
+  }
+  .content .infoBlock p {
+    font-size: 2em;
+    color: red;
+  }
 }

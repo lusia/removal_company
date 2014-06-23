@@ -63,12 +63,34 @@ body {
   width: 100%;
   height: 660px;
   position: relative;
+  margin-bottom: 100px;
   background-image: url("../img/bg2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 #container h1 {
   margin: 0;
+}
+#container .infoBlock {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.67);
+  color: white;
+  width: 52%;
+  height: 135px;
+  top: 30%;
+  left: 30%;
+}
+#container .infoBlock img {
+  display: inline;
+  float: left;
+  margin: 0 13px 0 10px;
+}
+#container .infoBlock p {
+  display: inline-block;
+  margin: 55px 0 0 20px;
+  font-weight: bold;
+  font-size: 2em;
+  word-wrap: break-word;
 }
 #container .header {
   bottom: 0;
@@ -77,6 +99,12 @@ body {
   min-height: 110px;
   background-color: white;
   position: absolute;
+}
+#container .header #logo {
+  display: inline-block;
+  color: green;
+  font-size: 2em;
+  margin: 20px 0 0 30px;
 }
 #container .header ul {
   margin: 0;
@@ -111,7 +139,18 @@ body {
   color: grey;
   text-align: center;
   border-right: 1px solid black;
-  font-size: 28px;
+  font-size: 2em;
+}
+#container .header ul li a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+#container .header ul li a:active, #container .header ul li a:focus {
+  outline: none;
+}
+#container .header ul li a:hover {
+  color: #e54a1a;
 }
 #container .header ul li:last-child {
   border-right: none;
@@ -122,29 +161,26 @@ body {
   top: 0;
   bottom: auto;
 }
-#container .infoBlock {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.67);
-  color: white;
-  width: 52%;
-  height: 135px;
-  top: 30%;
-  left: 30%;
-}
-#container .infoBlock img {
-  display: inline;
-  float: left;
-  margin: 0 13px 0 10px;
-}
-#container .infoBlock p {
-  display: inline-block;
-  margin: 55px 0 0 20px;
-  font-weight: bold;
-  font-size: 18px;
-  word-wrap: break-word;
-}
 
 .content {
   height: 1000px;
+  width: 70%;
   background-color: white;
+  margin: auto;
+}
+.content .infoBlock {
+  margin-bottom: 75px;
+}
+.content .infoBlock img {
+  vertical-align: text-top;
+  margin: 0 20px 20px 0;
+}
+.content .infoBlock h2 {
+  display: inline;
+  font-size: 2em;
+  color: #e54a1a;
+}
+.content .infoBlock p {
+  text-align: justify;
+  line-height: 200%;
 }
