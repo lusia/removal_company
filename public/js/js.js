@@ -11,7 +11,15 @@ $(function () {
 			container.removeClass("fixNav");
 		}
 
+
 	});
 
+	$("#menuList a").on('click', function (ev) {
+		var target = ev.currentTarget,
+			currentInfo = $(target).attr('data-link');
+		$('html, body').animate({
+			scrollTop: parseInt($("#" + currentInfo).offset().top - 150)
+		}, 2000);
 
+	});
 });

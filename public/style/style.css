@@ -54,6 +54,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+.p, h2 {
+  font-family: Arial, Tahoma, sans-serif;
+}
+
 body {
   margin: 0;
   font-family: Arial, Tahoma, sans-serif;
@@ -63,12 +67,33 @@ body {
   width: 100%;
   height: 660px;
   position: relative;
-  background-image: url("../img/bg2.jpg");
+  margin-bottom: 100px;
+  background: url('/public/img/../img/bg2.jpg?1403345041');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 #container h1 {
   margin: 0;
+}
+#container .infoBlock {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.67);
+  color: white;
+  width: 52%;
+  padding: 12px;
+  top: 25%;
+  left: 25%;
+}
+#container .infoBlock img {
+  display: inline;
+  float: left;
+  margin: 0 40px 0 10px;
+}
+#container .infoBlock p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 2em;
+  word-wrap: break-word;
 }
 #container .header {
   bottom: 0;
@@ -78,13 +103,20 @@ body {
   background-color: white;
   position: absolute;
 }
+#container .header #logo {
+  display: inline-block;
+  color: green;
+  font-size: 2em;
+  margin: 15px 10px 0 10px;
+}
 #container .header ul {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
   *zoom: 1;
-  margin-left: 20%;
+  margin-left: 10%;
+  display: inline-block;
 }
 #container .header ul li {
   list-style-image: none;
@@ -106,12 +138,23 @@ body {
   padding-right: 0;
 }
 #container .header ul li {
-  width: 207px;
+  width: 210px;
   display: block;
   color: grey;
   text-align: center;
   border-right: 1px solid black;
-  font-size: 28px;
+  font-size: 2em;
+}
+#container .header ul li a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+#container .header ul li a:active, #container .header ul li a:focus {
+  outline: none;
+}
+#container .header ul li a:hover {
+  color: #e54a1a;
 }
 #container .header ul li:last-child {
   border-right: none;
@@ -122,29 +165,26 @@ body {
   top: 0;
   bottom: auto;
 }
-#container .infoBlock {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.67);
-  color: white;
-  width: 52%;
-  height: 135px;
-  top: 30%;
-  left: 30%;
-}
-#container .infoBlock img {
-  display: inline;
-  float: left;
-  margin: 0 13px 0 10px;
-}
-#container .infoBlock p {
-  display: inline-block;
-  margin: 55px 0 0 20px;
-  font-weight: bold;
-  font-size: 18px;
-  word-wrap: break-word;
-}
 
 .content {
   height: 1000px;
+  width: 70%;
   background-color: white;
+  margin: auto;
+}
+.content .menuInfo {
+  margin-bottom: 75px;
+}
+.content .menuInfo img {
+  vertical-align: text-top;
+  margin: 0 20px 20px 0;
+}
+.content .menuInfo h2 {
+  display: inline;
+  font-size: 2em;
+  color: #e54a1a;
+}
+.content .menuInfo p {
+  text-align: justify;
+  line-height: 200%;
 }
